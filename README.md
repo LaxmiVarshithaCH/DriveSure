@@ -44,9 +44,9 @@ flowchart TD
     end
 
     subgraph Models
-        C1[Tire Health Model\n(feedforward NN)]
-        C2[Fog Risk Classifier\n(neural net)]
-        C3[Pothole Detection\n(CNN)]
+        C1[Tire Health Model(feedforward NN)]
+        C2[Fog Risk Classifier(neural net)]
+        C3[Pothole Detection(CNN)]
     end
 
     subgraph Logic & Control
