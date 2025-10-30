@@ -33,17 +33,49 @@ DriveSure is a smart road safety companion. Harnessing real-time machine learnin
 
 ```mermaid
 flowchart TD
-    A1[Dashboard.py]
-    A2[Fog Detection Model]
-    A3[Pothole Detection Model]
-    A4[Tire Degradation NN]
-    A5[WebRTC Video Input]
-    A6[Streamlit UI]
-    A1 --> A2
-    A1 --> A3
-    A1 --> A4
-    A1 --> A5
-    A1 --> A6
+    subgraph Data Sources & Sensors
+        A1[Vehicle Sensors]
+        A2[Webcam / Camera]
+    end
+
+    subgraph App Preprocessing
+        B1[Scaling & Encoding]
+        B2[Preprocessing & Normalization]
+    end
+
+    subgraph Models
+        C1[Tire Health Model\n(feedforward NN)]
+        C2[Fog Risk Classifier\n(neural net)]
+        C3[Pothole Detection\n(CNN)]
+    end
+
+    subgraph Logic & Control
+        D1[Defog Activation]
+        D2[Maintenance Alerts]
+        D3[Pothole Alert]
+        D4[Auto Turnoff]
+    end
+
+    subgraph Visualization & Output
+        E1[Streamlit Dashboard]
+        E2[Result Logging (CSV)]
+        E3[User Feedback / Animation]
+    end
+
+    A1 --> B1
+    A2 --> B2
+    B1 --> C1
+    B1 --> C2
+    B2 --> C3
+    C1 --> D2
+    C2 --> D1
+    C3 --> D3
+    D1 --> E1
+    D2 --> E1
+    D3 --> E1
+    E1 --> E2
+    E1 --> E3
+    D4 --> E1
 ```
 
 ---
