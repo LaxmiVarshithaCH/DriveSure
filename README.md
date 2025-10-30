@@ -30,34 +30,38 @@ DriveSure is a smart road safety companion. Harnessing real-time machine learnin
 ## 🏗️ Architecture Overview
 
 flowchart TD
-A1[dashboard.py]
-A2[Models (fog, pothole, tire)]
-A3[WebRTC Video Input]
-A4[Streamlit UI]
-A1 --> A2
-A1 --> A3
-A1 --> A4
+    A1[Dashboard.py]
+    A2[Fog Detection Model]
+    A3[Pothole Detection Model]
+    A4[Tire Degradation NN]
+    A5[WebRTC Video Input]
+    A6[Streamlit UI]
+    A1 --> A2
+    A1 --> A3
+    A1 --> A4
+    A1 --> A5
+    A1 --> A6
 
 ---
 
 ## 📂 Project Structure
 DriveSure/
 │
-├── models/ # Pre-trained ML models and scalers
-│ ├── fog_detection_model.pkl
-│ ├── fog_scaler.pkl
-│ ├── pothole_model.h5
-│ ├── scaler-2.pkl
-│ └── tire_degradation_nn_model.h5
+├── models/                          # Machine learning models and scalers
+│   ├── fog_detection_model.pkl
+│   ├── fog_scaler.pkl
+│   ├── pothole_model.h5
+│   ├── scaler-2.pkl
+│   └── tire_degradation_nn_model.h5
 │
-├── .DS_Store # System file (macOS)
-├── .gitignore # Git ignore rules
-├── .python-version # Python environment version
-├── README.md # Project documentation
-├── car_animation.json # Dashboard UI animation asset
-├── dashboard.py # Main Streamlit app
-├── requirements.txt # Python dependencies
-├── tire_predictions.csv # Reference tire wear data
+├── .DS_Store                        # System file (macOS)
+├── .gitignore                       # Git ignore rules
+├── .python-version                  # Python environment version
+├── README.md                        # Project documentation
+├── car_animation.json               # Animation asset for dashboard UI
+├── dashboard.py                     # Main Streamlit dashboard application
+├── requirements.txt                 # Python dependencies
+├── tire_predictions.csv             # Reference tire wear data
 
 ---
 
@@ -95,9 +99,9 @@ DriveSure/
 ## 🚦 Usage Guide
 
 Start the dashboard:
-
-streamlit run dashboard.py
-
+    ```
+    streamlit run dashboard.py
+    ```
 - Dashboard launches in your browser.
 - View real-time predictions (fog, pothole, tire).
 - Toggle webcam integration for live hazard alerts.
