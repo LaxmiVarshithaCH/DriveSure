@@ -29,6 +29,7 @@ DriveSure is a smart road safety companion. Harnessing real-time machine learnin
 
 ## 🏗️ Architecture Overview
 
+```mermaid
 flowchart TD
     A1[Dashboard.py]
     A2[Fog Detection Model]
@@ -41,10 +42,13 @@ flowchart TD
     A1 --> A4
     A1 --> A5
     A1 --> A6
+```
 
 ---
 
 ## 📂 Project Structure
+
+```text
 DriveSure/
 │
 ├── models/                          # Machine learning models and scalers
@@ -62,6 +66,7 @@ DriveSure/
 ├── dashboard.py                     # Main Streamlit dashboard application
 ├── requirements.txt                 # Python dependencies
 ├── tire_predictions.csv             # Reference tire wear data
+```
 
 ---
 
