@@ -134,7 +134,15 @@ Start the dashboard:
 
 <table>
   <tr>
-    <td align="center">
+      <td align="center">
+      <a href="https://github.com/32732Nikitha">
+        <img src="https://avatars.githubusercontent.com/32732Nikitha" width="100px;" alt=""/>
+        <br />
+        <sub><b>Dorbala Sai Nikitha</b></sub>
+      </a>
+      <br />
+    </td>
+          <td align="center">
       <a href="https://github.com/LaxmiVarshithaCH">
         <img src="https://avatars.githubusercontent.com/LaxmiVarshithaCH" width="100px;" alt=""/>
         <br />
@@ -150,19 +158,11 @@ Start the dashboard:
       </a>
       <br />
     </td>
-    <td align="center">
-      <a href="https://github.com/32732Nikitha">
-        <img src="https://avatars.githubusercontent.com/32732Nikitha" width="100px;" alt=""/>
-        <br />
-        <sub><b>Dorbala Sai Nikitha</b></sub>
-      </a>
-      <br />
-    </td>
       <td align="center">
       <a href="https://github.com/2300030144">
         <img src="https://avatars.githubusercontent.com/2300030144" width="100px;" alt=""/>
         <br />
-        <sub><b>Chittelu Nissy</b></sub>
+        <sub><b>Md Abdul Ahad Sharif</b></sub>
       </a>
       <br />
     </td>
