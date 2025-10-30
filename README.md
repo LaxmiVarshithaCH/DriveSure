@@ -58,7 +58,7 @@ flowchart TD
 
     subgraph Visualization & Output
         E1[Streamlit Dashboard]
-        E2[Result Logging (CSV)]
+        E2[Result Logging CSV]
         E3[User Feedback / Animation]
     end
 
