@@ -93,7 +93,7 @@ DriveSure/
    - fog_scaler.pkl
    - pothole_model.h5
    - scaler-2.pkl
-   - tire_degradation_nn_model.h5
+   - tire_degradation_nn_model.h5 - A feedforward neural network trained to predict tire degradation using preprocessed vehicle telemetry and track features.
 
    Also, ensure the root directory includes:
    - car_animation.json
