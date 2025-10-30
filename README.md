@@ -89,7 +89,7 @@ DriveSure/
     ```
 4. **Add models and data files**  
    Place these files in `models/` directory (if not already present):
-   - fog_detection_model.pkl
+   - fog_detection_model.pkl - A supervised classification model that predicts cabin fog conditions using scaled environmental sensor data and triggers an automated defogging control sequence.
    - fog_scaler.pkl
    - pothole_model.h5
    - scaler-2.pkl
