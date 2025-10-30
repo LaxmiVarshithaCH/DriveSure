@@ -1,4 +1,4 @@
-# 🚗 DriveSure: Detect, Predict, Prevent
+# 🚗 DriveSure: Predict, Alert, Prevent
 
 DriveSure is a smart road safety companion. Harnessing real-time machine learning and robust video analysis, DriveSure alerts you to hazards like fog, potholes, and tire wear—before your journey is at risk. Everything comes together in a single, interactive Streamlit dashboard.
 
