@@ -52,12 +52,12 @@ with st.container():
 
 @st.cache_resource
 def load_tire_model():
-    return load_model('tire_degradation_nn_model.h5', compile=False)
+    return load_model('models/tire_degradation_nn_model.h5', compile=False)
 tire_model=load_tire_model()
-fog_model = joblib.load('fog_detection_model.pkl')
-scaler = joblib.load('scaler-2.pkl')
-scalerfog = joblib.load('fog_scaler.pkl')
-pothole_model = load_model('pothole_model.h5', compile=False)
+fog_model = joblib.load('models/fog_detection_model.pkl')
+scaler = joblib.load('models/scaler-2.pkl')
+scalerfog = joblib.load('models/fog_scaler.pkl')
+pothole_model = load_model('models/pothole_model.h5', compile=False)
 
 motorsport_map = {
     "F1": 0, "WEC": 1, "DTM": 2, "Sedan": 3, "Motor Car": 4, "SUV": 5
