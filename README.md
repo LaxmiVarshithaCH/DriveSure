@@ -19,10 +19,12 @@ DriveSure is a smart road safety companion. Harnessing real-time machine learnin
 
 ## 🚀 Key Features
 
-- **Real-time Hazard Detection:** Instantly detects fog and potholes from live video.
-- **Tire Health Predictor:** Estimates tire degradation and notifies for maintenance.
-- **Interactive Dashboard:** All data in one beautiful Streamlit app.
-- **WebRTC-Ready:** Integrates your webcam for edge AI predictions.
+- **Real-time Data Analysis:** Potentially analyzes live video or data streams to identify potential hazards.
+- **Fog Detection:** Uses a machine learning model to detect fog conditions.
+- **Pothole Detection:** Employs a deep learning model to identify potholes in real-time.
+- **Tire Degradation Assessment:** Utilizes a neural network to predict tire degradation levels.
+- **Streamlit Dashboard:** Provides a user-friendly interface for visualizing data and interacting with the system.
+- **WebRTC Integration:** Allows integration with webcams to obtain video data for analysis.
 - **Plug and Play:** Fast setup for instant road safety insights.
 
 ---
@@ -87,22 +89,20 @@ DriveSure/
     ```
     pip install -r requirements.txt
     ```
-4. **Add models and data files**  
+4. **Add models and data files**
+   
    Place these files in `models/` directory (if not already present):
-   - fog_detection_model.pkl
-     ```
-     A supervised classification model that predicts cabin fog conditions using scaled environmental sensor data and triggers an automated defogging control sequence.
-     ```
-   - fog_scaler.pkl
-   - pothole_model.h5
-   - scaler-2.pkl
-   - tire_degradation_nn_model.h5
-     ```
-     A feedforward neural network trained to predict tire degradation using preprocessed vehicle telemetry and track features.
-     ```
+   - `fog_detection_model.pkl`
+       - A supervised classification model that predicts cabin fog conditions using scaled environmental sensor data and triggers an automated defogging control sequence.
+   - `fog_scaler.pkl`
+   - `pothole_model.h5`
+   - `tire_degradation_nn_model.h5`
+       - A feedforward neural network trained to predict tire degradation using preprocessed vehicle telemetry and track features.
+   - `scaler-2.pkl`
+   
    Also, ensure the root directory includes:
-   - car_animation.json
-   - tire_predictions.csv
+   - `car_animation.json`
+   - `tire_predictions.csv`
 
 ---
 
